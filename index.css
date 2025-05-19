@@ -275,25 +275,12 @@ video {
 }
 @media (max-width: 1024px) {
   .btn2 {
-    margin-left: 38%;
-    margin-right: 37%;
+    margin-left: 34%;
+    margin-right: 34%;
   }
 }
 
-  
 
-
-
-@media (max-width: 768px) {
-  .btn2  {
-    font-size: 1rem;
-    padding: 0.3rem 0.3rem;
-    text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
-    
-  }
-}
 
 @media (max-width: 480px) {
   .header {
@@ -368,6 +355,12 @@ video {
   padding: 16px 30px;
   border-radius: 6px;
   transition: 300ms;
+}
+@media (max-width: 1024px) {
+  .btn1 {
+    margin-left: 34%;
+    margin-right: 34%;
+  }
 }
 
 .btn1:hover span {
