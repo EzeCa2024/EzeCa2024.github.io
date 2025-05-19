@@ -447,6 +447,33 @@ video {
     margin-right: 0%;
   }
 }
+  .btn2 {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .btn2 span {
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .btn2 {
+      width: 90%;
+      font-size: 1rem;
+      padding: 0.75rem;
+      margin: 1rem auto;
+      display: block;
+    }
+  }
 
 
 
@@ -461,7 +488,7 @@ video {
 
 @media (max-width: 600px) {
   .boton {
-    font-size: 1rem;
+    font-size: 0.5rem;
     padding: 0.6rem 1.5rem;
   }
 }
@@ -511,7 +538,6 @@ video {
 /* Estilos responsivos para móviles */
 @media (max-width: 768px) {
   .btn1, .btn2 {
-    font-size: 0.1rem;
     padding: 5px 5px;
     width: 50%;
     text-align: center;
