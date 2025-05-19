@@ -275,6 +275,7 @@ video {
 }
 @media (max-width: 1024px) {
   .btn2 {
+    font-size: 0.4rem;
     margin-left: 34%;
     margin-right: 34%;
   }
@@ -282,6 +283,7 @@ video {
 
 @media (max-width: 1220px) {
   .btn2 {
+    font-size: 0.4rem;
     margin-left: 30%;
     margin-right: 30%;
   }
