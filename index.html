@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Maicol Carrera, analista de datos especializado en Power BI, SQL y visualización de datos." />
+  <meta name="author" content="Maicol Carrera" />
+  <title>Maicol Carrera | Portafolio Profesional</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <main id="hero">
+    <video autoplay muted loop>
+      <source src="vid.mp4" type="video/mp4" />
+      Tu navegador no soporta el video HTML5.
+    </video>
+
+    <header class="header">
+      <nav>
+        <a href="#header" class="EnlacesHeader">HOME</a>
+        <a href="#cv" class="EnlacesHeader">CV</a>
+        <a href="#proyectos" class="EnlacesHeader">PORTFOLIO</a>
+        <a href="https://api.whatsapp.com/send/?phone=%2B59897017846" target="_blank" class="EnlacesHeader">CONTACTAR</a>
+      </nav>
+    </header>
+
+    <div id="primertexto">
+      <div class="texto-izquierda">
+        <h1>MAICOL</h1>
+      </div>
+      <img src="barra-grafica.png" alt="Icono gráfico" />
+      <div class="texto-derecha">
+        <h1>CARRERA</h1>
+      </div>
+    </div>
+
+    <div class="iconos">
+      <a href="https://api.whatsapp.com/send/?phone=%2B59897017846" target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp" />
+      </a>
+      <a href="https://www.linkedin.com/in/maicol-carrera-162322361/" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn" />
+      </a>
+    </div>
+
+    <section class="section">
+  <div class="intro-texto">
+    <p>
+      Bienvenido a mi portafolio.<br />
+      Soy analista de datos y especialista en visualización.<br />
+      Me especializo en bases de datos (SQL) y Power BI.
+    </p>
+  </div>
+</section>
+
+
+  </main>
+
+  <section class="divisor">
+    <div class="container">
+      <div id="about">
+        <h2 class="titulo">SOBRE MÍ</h2>
+        <p class="parrafo">
+            Soy un joven profesional uruguayo-español de 22 años, actualmente cursando estudios en la <br>Facultad de Ingeniería,  con una sólida formación en programación y análisis de datos.<br>
+            He completado un curso de programación en Python y Pascal(Facultad) y conocimientos de C/C++, <br>además de formación en análisis de datos utilizando SQL, Power BI y Excel.<br>
+            Mi experiencia laboral incluye roles en logística y manufactura, donde he desarrollado <br>habilidades en gestión de materiales, etiquetado de productos y atención al cliente.<br> 
+            También he trabajado como aprendiz y ayudante de mecánica, realizando tareas de revisión <br>de  inventario,organización de herramientas y asistencia en trabajos técnicos ademas de atencion al cliente. <br>
+            Me considero una persona proactiva, organizada y con una fuerte orientación al aprendizaje continuo.<br> Busco oportunidades que me permitan aplicar mis conocimientos técnicos y habilidades<br> interpersonales para contribuir al éxito de proyectos y equipos de trabajo.
+        </p>
+      </div>
+      <img src="fotomia.jpg" alt="Foto de Maicol Carrera" class="photo" />
+    </div>
+  </section>
+
+  <div class="portafolio2" id="cv">
+    <section >
+      <h2 class="seccion">CV</h2>
+      <img src="Maicol.curriculum.jpg.jpg" alt="Currículum Vitae" class="foto" />
+      <a href="https://www.mediafire.com/view/2ltmst3vx3g8uw6/Maicol.curriculum.jpg.jpg/file"  class="btn2">
+        <span>Ver/Descargar CV</span>
+      </a>
+    </section>
+  </div>
+
+  <section class="portafolio" id="proyectos">
+    <h2 class="seccion">PORTAFOLIO / PROYECTOS</h2>
+    <div class="proyectos">
+        <img src="proyecto1.png" alt="Proyecto 1 - Power BI" class="foto" />
+        <img src="proyecto2.png" alt="Proyecto 2 - Power BI" class="foto" />
+        <img src="proyecto3.png" alt="Proyecto 3 - Power BI" class="foto" />  
+        <img src="ProyectoPython.png" alt="Analisis Netflix-DataSet" class="foto" /> 
+    </div>
+    <a href="https://drive.google.com/drive/u/4/folders/1hin_3umkNsToo_bJHDkrLboeU7WrR8P3"  class="btn1">
+      <span>Ver todos los proyectos interanctivos</span>
+    </a>
+  </section>
+
+  <!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" alt="Imagen ampliada" />
+</div>
+<script>
+  // Obtener elementos
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.close');
+
+  // Detectar clic en todas las imágenes con clase .foto o .proyecto3
+  document.querySelectorAll('.foto, .proyecto3').forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'block';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  // Cerrar modal al hacer clic en la X
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  // Cerrar modal si se hace clic fuera de la imagen
+  window.addEventListener('click', e => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
+
+
+</body>
+</html>
