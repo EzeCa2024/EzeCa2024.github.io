@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio profesional de IT, Datos y Ciberseguridad">
+    <title>Portfolio | IT · Datos · Ciberseguridad</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="logo">
+            <span></span>Maicol Carrera</span>
+        </div>
+
+        <nav id="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button id="themeButton" class="theme-button">☾</button>
+        <button id="menuButton" class="menu-button">☰</button>
+    </header>
+
+
+    <!-- ================= INICIO ================= -->
+    <section id="inicio" class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                IT · DATA · CYBERSECURITY
+            </p>
+
+            <h1>
+                Tecnología,
+                <span>datos</span>
+                y seguridad.
+            </h1>
+
+            <p class="hero-description">
+                Portfolio profesional donde presento mis proyectos,
+                conocimientos y experiencia en tecnología, análisis de datos,
+                infraestructura IT y ciberseguridad.
+            </p>
+
+            <div class="buttons">
+                <a href="#proyectos" class="button primary">
+                    Ver proyectos
+                </a>
+
+                <a href="#contacto" class="button secondary">
+                    Contactarme
+                </a>
+            </div>
+
+            <div class="stats">
+
+                <div>
+                    <strong>IT</strong>
+                    <small>Soporte e infraestructura</small>
+                </div>
+
+                <div>
+                    <strong>DATA</strong>
+                    <small>SQL · BI · Análisis</small>
+                </div>
+
+                <div>
+                    <strong>CYBER</strong>
+                    <small>Seguridad informática</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TERMINAL -->
+        <div class="terminal">
+
+            <div class="terminal-header">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="terminal-content">
+
+                <p>
+                    <span class="green">user</span>@portfolio:~$
+                    whoami
+                </p>
+
+                <p class="gray">
+                    Técnico IT · Data Analyst
+                </p>
+
+                <p>
+                    <span class="green">user</span>@portfolio:~$
+                    skills
+                </p>
+
+                <p>
+                    <span class="cyan">[</span>
+                    Python, SQL, Power BI,
+                    Windows Server
+                    <span class="cyan">]</span>
+                </p>
+
+                <p>
+                    <span class="green">user</span>@portfolio:~$
+                    status
+                </p>
+
+                <p class="success">
+                    ● Disponible para nuevos desafíos
+                </p>
+
+                <p class="cursor">_</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SOBRE MI ================= -->
+    <section id="sobre-mi" class="section">
+
+        <div class="section-title">
+            <p class="eyebrow">01 / PERFIL</p>
+            <h2>Sobre mí</h2>
+        </div>
+
+        <div class="cards">
+
+            <article class="card">
+
+                <div class="card-icon">
+                    ⌘
+                </div>
+
+                <h3>Perfil IT</h3>
+
+                <p>
+                    Orientado al soporte técnico, infraestructura,
+                    redes, servidores y resolución de incidentes.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-icon">
+                    ▣
+                </div>
+
+                <h3>Análisis de datos</h3>
+
+                <p>
+                    Conocimientos en SQL, Excel, Power BI y análisis
+                    de información para generar reportes e indicadores.
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-icon">
+                    ⚡
+                </div>
+
+                <h3>Ciberseguridad</h3>
+
+                <p>
+                    Formación y conocimientos orientados a seguridad
+                    informática, análisis de incidentes y protección
+                    de sistemas.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROYECTOS ================= -->
+    <section id="proyectos" class="section">
+
+        <div class="section-header">
+
+            <div>
+                <p class="eyebrow">02 / PORTFOLIO</p>
+                <h2>Mis proyectos</h2>
+            </div>
+
+            <button id="addProject" class="button primary">
+                + Agregar proyecto
+            </button>
+
+        </div>
+
+
+        <!-- FILTROS -->
+        <div class="filters">
+
+            <button class="filter active" data-filter="Todos">
+                Todos
+            </button>
+
+            <button class="filter" data-filter="IT">
+                IT
+            </button>
+
+            <button class="filter" data-filter="Datos">
+                Datos
+            </button>
+
+            <button class="filter" data-filter="Ciberseguridad">
+                Ciberseguridad
+            </button>
+
+            <button class="filter" data-filter="Python">
+                Python
+            </button>
+
+        </div>
+
+
+        <div id="projectsContainer" class="projects">
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HABILIDADES ================= -->
+    <section id="habilidades" class="section">
+
+        <div class="section-title">
+
+            <p class="eyebrow">
+                03 / TECNOLOGÍAS
+            </p>
+
+            <h2>
+                Habilidades
+            </h2>
+
+        </div>
+
+
+        <div class="skills-container">
+
+            <div class="skills">
+
+                <div class="skill">
+                    <div>
+                        <span>SQL</span>
+                        <strong>90%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <span style="width:90%"></span>
+                    </div>
+                </div>
+
+
+                <div class="skill">
+                    <div>
+                        <span>Power BI / Excel</span>
+                        <strong>88%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <span style="width:88%"></span>
+                    </div>
+                </div>
+
+
+                <div class="skill">
+                    <div>
+                        <span>Soporte IT</span>
+                        <strong>90%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <span style="width:90%"></span>
+                    </div>
+                </div>
+
+
+                <div class="skill">
+                    <div>
+                        <span>Redes / Servidores</span>
+                        <strong>82%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <span style="width:82%"></span>
+                    </div>
+                </div>
+
+
+                <div class="skill">
+                    <div>
+                        <span>Python</span>
+                        <strong>78%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <span style="width:78%"></span>
+                    </div>
+                </div>
+
+
+                <div class="skill">
+                    <div>
+                        <span>Ciberseguridad</span>
+                        <strong>80%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <span style="width:80%"></span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="technologies">
+
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Power BI</span>
+                <span>Excel</span>
+                <span>Windows Server</span>
+                <span>VMware</span>
+                <span>Veeam</span>
+                <span>MikroTik</span>
+                <span>Linux</span>
+                <span>Git</span>
+                <span>Networking</span>
+                <span>Cybersecurity</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACTO ================= -->
+    <section id="contacto" class="section">
+
+        <div class="contact">
+
+            <div>
+
+                <p class="eyebrow">
+                    04 / CONTACTO
+                </p>
+
+                <h2>
+                    ¿Trabajamos juntos?
+                </h2>
+
+                <p>
+                    Estoy abierto a oportunidades laborales y proyectos
+                    relacionados con IT, datos, infraestructura y
+                    ciberseguridad.
+                </p>
+
+            </div>
+
+
+            <div class="contact-links">
+
+                <a href="mailto:ezequiel.carrera2017@gmail.com">
+                    ✉ ezequiel.carrera2017@gmail.com
+                </a>
+
+                <a href="https://wa.link/dq8xpm" target="_blank">
+                    ◈ WhatsApp
+                </a>
+
+                <a href="https://www.linkedin.com/in/maicol-carrera-162322361/" target="_blank">
+                    in LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <p>
+            © <span id="year"></span> Maicol · Portfolio IT
+        </p>
+
+    </footer>
+
+
+    <!-- ================= MODAL ================= -->
+
+    <div id="modal" class="modal hidden">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close">
+                ×
+            </button>
+
+            <p class="eyebrow">
+                NUEVO PROYECTO
+            </p>
+
+            <h3>
+                Agregar proyecto
+            </h3>
+
+
+            <form id="projectForm">
+
+                <label>
+                    Nombre del proyecto
+
+                    <input
+                        type="text"
+                        name="title"
+                        placeholder="Ej. Dashboard de ventas"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+                    Categoría
+
+                    <select name="category">
+
+                        <option value="IT">
+                            IT
+                        </option>
+
+                        <option value="Datos">
+                            Datos
+                        </option>
+
+                        <option value="Ciberseguridad">
+                            Ciberseguridad
+                        </option>
+
+                        <option value="Python">
+                            Python
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+                    Descripción
+
+                    <textarea
+                        name="description"
+                        placeholder="Describe tu proyecto..."
+                        required
+                    ></textarea>
+
+                </label>
+
+
+                <label>
+                    Tecnologías
+
+                    <input
+                        type="text"
+                        name="technologies"
+                        placeholder="Python, SQL, Power BI"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+                    Link del proyecto
+
+                    <input
+                        type="url"
+                        name="url"
+                        placeholder="https://github.com/..."
+                    >
+
+                </label>
+
+
+                <label>
+                    Imagen del proyecto
+
+                    <input
+                        type="url"
+                        name="image"
+                        placeholder="https://..."
+                    >
+
+                </label>
+
+
+                <button class="button primary" type="submit">
+                    Guardar proyecto
+                </button>
+
+            </form>
+
+            <small>
+                Los proyectos se guardan automáticamente en tu navegador.
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
