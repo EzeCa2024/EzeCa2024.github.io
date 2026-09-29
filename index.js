@@ -9,17 +9,18 @@ const defaultProjects = [
 
         title: "JetBrains Lab - CyberDefenders",
 
-        category: "Datos",
+        category: "CiberSeguridad",
 
         description:
-            "Dashboard para analizar KPIs, tendencias y métricas de negocio.",
+            "Análisis de tráfico de red utilizando Wireshark para identificar la explotación de un servidor web, 
+            extraer indicadores de compromiso (IoC), detectar mecanismos de persistencia y relacionar las técnicas observadas con el framework MITRE ATT&CK.",
 
         technologies:
-            ["SQL", "Power BI", "Excel"],
+            ["Wireshark", "PCAP", "Análisis de tráfico de red " ," MITRE ATT&CK"," IoC"],
 
-        url: "#",
+        url: "https://github.com/EzeCa2024/EzeCa2024.github.io/blob/main/2.png",
 
-        image: "./2.png"
+        image: "https://github.com/EzeCa2024/EzeCa2024.github.io/blob/main/2.png"
     },
 
 
