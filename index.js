@@ -38,7 +38,7 @@ const defaultProjects = [
 
         url: "https://lnkd.in/p/dbTe9UzS",
 
-        image: "3.pnp"
+        image: "/3.pnp"
     },
 
 
@@ -57,7 +57,7 @@ const defaultProjects = [
 
         url: "https://lnkd.in/p/dqvz23Ei",
 
-        image: "4.png"
+        image: "/4.png"
     },
 
 
@@ -76,7 +76,7 @@ const defaultProjects = [
 
         url: "https://lnkd.in/p/duTwjkK9",
 
-        image: "5.png"
+        image: "/5.png"
     },
 
 
