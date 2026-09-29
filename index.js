@@ -17,9 +17,9 @@ const defaultProjects = [
         technologies:
             ["Wireshark", "PCAP", "Análisis de tráfico de red " ," MITRE ATT&CK"," IoC"],
 
-        url: "https://github.com/EzeCa2024/EzeCa2024.github.io/blob/main/2.png",
+        url: "https://lnkd.in/p/dtNA8fmj",
 
-        image: "https://github.com/EzeCa2024/EzeCa2024.github.io/blob/main/2.png"
+        image: "/2.png"
     },
 
 
@@ -38,83 +38,83 @@ const defaultProjects = [
 
         url: "https://lnkd.in/p/dbTe9UzS",
 
-        image: "https://lnkd.in/p/dbTe9UzS"
+        image: "3.pnp"
     },
 
 
     {
         id: 3,
 
-        title: "Laboratorio de Ciberseguridad",
+        title: "PsExec Hunt Lab - CyberDefenders",
 
         category: "Ciberseguridad",
 
         description:
-            "Entorno de práctica para análisis de vulnerabilidades y seguridad.",
+            "Análisis de tráfico de red a partir de archivos PCAP utilizando Wireshark para identificar movimiento lateral, compromiso de endpoints, credenciales y actividad administrativa. El análisis permite investigar diferentes indicadores asociados al uso de PsExec y mapear las técnicas observadas con MITRE ATT&CK.",
 
         technologies:
-            ["Linux", "Networking", "Security"],
+            ["Wireshark", "PCAP", "Análisis de tráfico de red" ," PsExec" , " MITRE ATT&CK" ," Movimiento lateral"],
 
-        url: "#",
+        url: "https://lnkd.in/p/dqvz23Ei",
 
-        image: ""
+        image: "4.png"
     },
 
 
     {
-        id: 4,
+        id: 1,
 
-        title: "Infraestructura IT",
+        title: "XLMRat Lab - CyberDefenders",
 
-        category: "IT",
+        category: "CiberSeguridad",
 
         description:
-            "Diseño de infraestructura utilizando servidores, redes y virtualización.",
+            "Análisis de tráfico de red orientado a identificar técnicas de distribución de malware, scripts ofimáticos y técnicas de ataque relacionadas con MITRE ATT&CK, con especial atención a mecanismos de ejecución sigilosa y carga de código.",
 
         technologies:
-            ["Windows Server", "VMware", "Veeam"],
+            ["Wireshark", "Análisis de tráfico de red", " Malware Analysis" ," XLM" ," MITRE ATT&CK" ," PCAP"],
 
-        url: "#",
+        url: "https://lnkd.in/p/duTwjkK9",
 
-        image: ""
+        image: "5.png"
     },
 
 
     {
         id: 5,
 
-        title: "Consultas SQL",
+        title: "Meow Machine - HackTheBox",
 
-        category: "Datos",
+        category: "CiberSeguridad",
 
         description:
-            "Colección de consultas SQL para análisis y transformación de información.",
+            "Resolución de una máquina de Hack The Box mediante técnicas de enumeración y explotación orientadas a identificar y aprovechar los servicios disponibles en el objetivo.",
 
         technologies:
-            ["SQL", "Data Analysis"],
+            ["Hack The Box ", "Pentesting"," Enumeración "," Explotación"],
 
-        url: "#",
+        url: "https://lnkd.in/p/d8cSuDa2",
 
-        image: ""
+        image: "/6.png"
     },
 
 
     {
         id: 6,
 
-        title: "Monitorización de red",
+        title: "Tomcat Takeover Lab - CyberDefenders",
 
-        category: "IT",
+        category: "CiberSeguridad",
 
         description:
-            "Proyecto para monitorizar disponibilidad y conectividad de infraestructura.",
+            "Análisis de tráfico de red utilizando Wireshark, aplicando filtros y estadísticas para identificar servicios web, actividad administrativa y posibles indicadores de compromiso. El laboratorio está orientado a la investigación de un posible ataque contra un servidor Tomcat y al mapeo de las técnicas observadas con MITRE ATT&CK.",
 
         technologies:
-            ["Networking", "MikroTik", "Monitoring"],
+            ["Wireshark", "Análisis de tráfico de red", "MITRE ATT&CK" ,"PCAP" ," Tomcat", " Web Security"],
 
-        url: "#",
+        url: "https://lnkd.in/p/dnymgwyV",
 
-        image: ""
+        image: "/uno.png"
     }
 
 ];
