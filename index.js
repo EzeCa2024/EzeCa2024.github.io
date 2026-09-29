@@ -12,8 +12,7 @@ const defaultProjects = [
         category: "CiberSeguridad",
 
         description:
-            "Análisis de tráfico de red utilizando Wireshark para identificar la explotación de un servidor web, 
-            extraer indicadores de compromiso (IoC), detectar mecanismos de persistencia y relacionar las técnicas observadas con el framework MITRE ATT&CK.",
+            "Análisis de tráfico de red utilizando Wireshark para identificar la explotación de un servidor web, extraer indicadores de compromiso (IoC), detectar mecanismos de persistencia y relacionar las técnicas observadas con el framework MITRE ATT&CK.",
 
         technologies:
             ["Wireshark", "PCAP", "Análisis de tráfico de red " ," MITRE ATT&CK"," IoC"],
@@ -32,13 +31,12 @@ const defaultProjects = [
         category: "CiberSeguridad ",
 
         description:
-            "Resolución de una máquina de Hack The Box, aplicando técnicas de enumeración, análisis y explotación para 
-               comprometer el objetivo y completar el desafío de seguridad.",
+            "Resolución de una máquina de Hack The Box, aplicando técnicas de enumeración, análisis y explotación para comprometer el objetivo y completar el desafío de seguridad.",
 
         technologies:
             ["Enumeración", "Hack The Box", "Pentesting"," Explotación"],
 
-        url: "https://github.com/EzeCa2024/EzeCa2024.github.io/blob/main/3.png",
+        url: "",
 
         image: "https://lnkd.in/p/dbTe9UzS"
     },
