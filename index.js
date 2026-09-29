@@ -6,125 +6,87 @@ const defaultProjects = [
 
     {
         id: 1,
-
         title: "JetBrains Lab - CyberDefenders",
-
         category: "CiberSeguridad",
-
         description:
             "Análisis de tráfico de red utilizando Wireshark para identificar la explotación de un servidor web, extraer indicadores de compromiso (IoC), detectar mecanismos de persistencia y relacionar las técnicas observadas con el framework MITRE ATT&CK.",
-
         technologies:
-            ["Wireshark", "PCAP", "Análisis de tráfico de red " ," MITRE ATT&CK"," IoC"],
-
+            ["Wireshark", "PCAP", "Análisis de tráfico de red", "MITRE ATT&CK", "IoC"],
         url: "https://lnkd.in/p/dtNA8fmj",
-
         image: "/2.png"
     },
 
-
     {
         id: 2,
-
         title: "PhantomRing - HackTheBox",
-
-        category: "CiberSeguridad ",
-
+        category: "Ciberseguridad",
         description:
             "Resolución de una máquina de Hack The Box, aplicando técnicas de enumeración, análisis y explotación para comprometer el objetivo y completar el desafío de seguridad.",
-
         technologies:
-            ["Enumeración", "Hack The Box", "Pentesting"," Explotación"],
-
+            ["Enumeración", "Hack The Box", "Pentesting", "Explotación"],
         url: "https://lnkd.in/p/dbTe9UzS",
-
         image: "/3.pnp"
     },
 
-
     {
         id: 3,
-
         title: "PsExec Hunt Lab - CyberDefenders",
-
         category: "Ciberseguridad",
-
         description:
             "Análisis de tráfico de red a partir de archivos PCAP utilizando Wireshark para identificar movimiento lateral, compromiso de endpoints, credenciales y actividad administrativa. El análisis permite investigar diferentes indicadores asociados al uso de PsExec y mapear las técnicas observadas con MITRE ATT&CK.",
-
         technologies:
-            ["Wireshark", "PCAP", "Análisis de tráfico de red" ," PsExec" , " MITRE ATT&CK" ," Movimiento lateral"],
-
+            ["Wireshark", "PCAP", "Análisis de tráfico de red", "PsExec", "MITRE ATT&CK", "Movimiento lateral"],
         url: "https://lnkd.in/p/dqvz23Ei",
-
         image: "/4.png"
     },
 
-
     {
-        id: 1,
-
+        id: 4,
         title: "XLMRat Lab - CyberDefenders",
-
         category: "CiberSeguridad",
-
         description:
             "Análisis de tráfico de red orientado a identificar técnicas de distribución de malware, scripts ofimáticos y técnicas de ataque relacionadas con MITRE ATT&CK, con especial atención a mecanismos de ejecución sigilosa y carga de código.",
-
         technologies:
-            ["Wireshark", "Análisis de tráfico de red", " Malware Analysis" ," XLM" ," MITRE ATT&CK" ," PCAP"],
-
+            ["Wireshark", "Análisis de tráfico de red", "Malware Analysis", "XLM", "MITRE ATT&CK", "PCAP"],
         url: "https://lnkd.in/p/duTwjkK9",
-
         image: "/5.png"
     },
 
-
     {
         id: 5,
-
         title: "Meow Machine - HackTheBox",
-
         category: "CiberSeguridad",
-
         description:
             "Resolución de una máquina de Hack The Box mediante técnicas de enumeración y explotación orientadas a identificar y aprovechar los servicios disponibles en el objetivo.",
-
         technologies:
-            ["Hack The Box ", "Pentesting"," Enumeración "," Explotación"],
-
+            ["Hack The Box", "Pentesting", "Enumeración", "Explotación"],
         url: "https://lnkd.in/p/d8cSuDa2",
-
         image: "/6.png"
     },
 
-
     {
         id: 6,
-
         title: "Tomcat Takeover Lab - CyberDefenders",
-
         category: "CiberSeguridad",
-
         description:
             "Análisis de tráfico de red utilizando Wireshark, aplicando filtros y estadísticas para identificar servicios web, actividad administrativa y posibles indicadores de compromiso. El laboratorio está orientado a la investigación de un posible ataque contra un servidor Tomcat y al mapeo de las técnicas observadas con MITRE ATT&CK.",
-
         technologies:
-            ["Wireshark", "Análisis de tráfico de red", "MITRE ATT&CK" ,"PCAP" ," Tomcat", " Web Security"],
-
+            ["Wireshark", "Análisis de tráfico de red", "MITRE ATT&CK", "PCAP", "Tomcat", "Web Security"],
         url: "https://lnkd.in/p/dnymgwyV",
-
         image: "/uno.png"
     }
 
 ];
 
 
+/* =========================================
+   VARIABLES
+========================================= */
+
 let projects =
     JSON.parse(
         localStorage.getItem("portfolioProjects")
     ) || defaultProjects;
-
 
 let currentFilter = "Todos";
 
@@ -134,9 +96,7 @@ let currentFilter = "Todos";
 ========================================= */
 
 const projectsContainer =
-    document.getElementById(
-        "projectsContainer"
-    );
+    document.getElementById("projectsContainer");
 
 const modal =
     document.getElementById("modal");
@@ -173,30 +133,22 @@ function renderProjects() {
 
     projectsContainer.innerHTML = "";
 
-
     const filteredProjects =
         currentFilter === "Todos"
-
             ? projects
-
             : projects.filter(
                 project =>
                     project.category === currentFilter
             );
-
 
     filteredProjects.forEach(project => {
 
         const article =
             document.createElement("article");
 
-
-        article.className =
-            "project";
-
+        article.className = "project";
 
         let image = "";
-
 
         if (project.image) {
 
@@ -204,6 +156,8 @@ function renderProjects() {
                 `<img
                     src="${escapeHTML(project.image)}"
                     alt="${escapeHTML(project.title)}"
+                    class="project-clickable-image"
+                    title="Ver proyecto completo"
                 >`;
 
         } else {
@@ -223,7 +177,6 @@ function renderProjects() {
 
 
         let link = "";
-
 
         if (
             project.url &&
@@ -288,12 +241,32 @@ function renderProjects() {
         `;
 
 
-        projectsContainer.appendChild(
-            article
-        );
+        projectsContainer.appendChild(article);
+
+
+        /* =========================================
+           CLICK EN LA IMAGEN
+        ========================================= */
+
+        if (project.image) {
+
+            const projectImage =
+                article.querySelector(
+                    ".project-clickable-image"
+                );
+
+            if (projectImage) {
+
+                projectImage.addEventListener(
+                    "click",
+                    () => openProjectDetails(project)
+                );
+
+            }
+
+        }
 
     });
-
 
 }
 
@@ -327,9 +300,7 @@ function escapeHTML(value) {
 ========================================= */
 
 const filters =
-    document.querySelectorAll(
-        ".filter"
-    );
+    document.querySelectorAll(".filter");
 
 
 filters.forEach(filter => {
@@ -340,20 +311,13 @@ filters.forEach(filter => {
 
             filters.forEach(
                 button =>
-                    button.classList.remove(
-                        "active"
-                    )
+                    button.classList.remove("active")
             );
 
-
-            filter.classList.add(
-                "active"
-            );
-
+            filter.classList.add("active");
 
             currentFilter =
                 filter.dataset.filter;
-
 
             renderProjects();
 
@@ -364,7 +328,229 @@ filters.forEach(filter => {
 
 
 /* =========================================
-   ABRIR MODAL
+   MODAL DETALLE DEL PROYECTO
+========================================= */
+
+const projectDetailsModal =
+    document.getElementById(
+        "projectDetailsModal"
+    );
+
+const closeProjectDetails =
+    document.getElementById(
+        "closeProjectDetails"
+    );
+
+const projectDetailsImage =
+    document.getElementById(
+        "projectDetailsImage"
+    );
+
+const projectDetailsCategory =
+    document.getElementById(
+        "projectDetailsCategory"
+    );
+
+const projectDetailsTitle =
+    document.getElementById(
+        "projectDetailsTitle"
+    );
+
+const projectDetailsDescription =
+    document.getElementById(
+        "projectDetailsDescription"
+    );
+
+const projectDetailsTags =
+    document.getElementById(
+        "projectDetailsTags"
+    );
+
+const projectDetailsLink =
+    document.getElementById(
+        "projectDetailsLink"
+    );
+
+
+/* =========================================
+   ABRIR DETALLE
+========================================= */
+
+function openProjectDetails(project) {
+
+    if (!projectDetailsModal) return;
+
+
+    projectDetailsCategory.textContent =
+        project.category || "";
+
+
+    projectDetailsTitle.textContent =
+        project.title || "";
+
+
+    projectDetailsDescription.textContent =
+        project.description || "";
+
+
+    /* Imagen */
+
+    if (project.image) {
+
+        projectDetailsImage.src =
+            project.image;
+
+        projectDetailsImage.alt =
+            project.title || "Proyecto";
+
+        projectDetailsImage.style.display =
+            "block";
+
+    } else {
+
+        projectDetailsImage.removeAttribute(
+            "src"
+        );
+
+        projectDetailsImage.alt = "";
+
+        projectDetailsImage.style.display =
+            "none";
+
+    }
+
+
+    /* Tecnologías */
+
+    projectDetailsTags.innerHTML =
+        (project.technologies || [])
+            .map(
+                tech =>
+                    `<span>${escapeHTML(tech)}</span>`
+            )
+            .join("");
+
+
+    /* Link */
+
+    if (
+        project.url &&
+        project.url !== "#"
+    ) {
+
+        projectDetailsLink.href =
+            project.url;
+
+        projectDetailsLink.style.display =
+            "inline-flex";
+
+    } else {
+
+        projectDetailsLink.removeAttribute(
+            "href"
+        );
+
+        projectDetailsLink.style.display =
+            "none";
+
+    }
+
+
+    projectDetailsModal.classList.remove(
+        "hidden"
+    );
+
+    document.body.classList.add(
+        "modal-open"
+    );
+
+}
+
+
+/* =========================================
+   CERRAR DETALLE
+========================================= */
+
+function closeProjectDetailsModal() {
+
+    if (!projectDetailsModal) return;
+
+    projectDetailsModal.classList.add(
+        "hidden"
+    );
+
+    document.body.classList.remove(
+        "modal-open"
+    );
+
+}
+
+
+/* =========================================
+   BOTÓN CERRAR
+========================================= */
+
+if (closeProjectDetails) {
+
+    closeProjectDetails.addEventListener(
+        "click",
+        closeProjectDetailsModal
+    );
+
+}
+
+
+/* =========================================
+   CERRAR HACIENDO CLICK AFUERA
+========================================= */
+
+if (projectDetailsModal) {
+
+    projectDetailsModal.addEventListener(
+        "click",
+        event => {
+
+            if (
+                event.target ===
+                projectDetailsModal
+            ) {
+
+                closeProjectDetailsModal();
+
+            }
+
+        }
+    );
+
+}
+
+
+/* =========================================
+   CERRAR CON ESC
+========================================= */
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key === "Escape" &&
+            projectDetailsModal &&
+            !projectDetailsModal.classList.contains(
+                "hidden"
+            )
+        ) {
+
+            closeProjectDetailsModal();
+
+        }
+
+    }
+);
+
+
+/* =========================================
+   ABRIR MODAL AGREGAR PROYECTO
 ========================================= */
 
 addProject.addEventListener(
@@ -380,7 +566,7 @@ addProject.addEventListener(
 
 
 /* =========================================
-   CERRAR MODAL
+   CERRAR MODAL AGREGAR
 ========================================= */
 
 closeModal.addEventListener(
