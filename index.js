@@ -7,7 +7,7 @@ const defaultProjects = [
     {
         id: 1,
         title: "JetBrains Lab - CyberDefenders",
-        category: "CiberSeguridad",
+        category: "Ciberseguridad",
         description:
             "Análisis de tráfico de red utilizando Wireshark para identificar la explotación de un servidor web, extraer indicadores de compromiso (IoC), detectar mecanismos de persistencia y relacionar las técnicas observadas con el framework MITRE ATT&CK.",
         technologies:
@@ -43,7 +43,7 @@ const defaultProjects = [
     {
         id: 4,
         title: "XLMRat Lab - CyberDefenders",
-        category: "CiberSeguridad",
+        category: "Ciberseguridad",
         description:
             "Análisis de tráfico de red orientado a identificar técnicas de distribución de malware, scripts ofimáticos y técnicas de ataque relacionadas con MITRE ATT&CK, con especial atención a mecanismos de ejecución sigilosa y carga de código.",
         technologies:
@@ -55,7 +55,7 @@ const defaultProjects = [
     {
         id: 5,
         title: "Meow Machine - HackTheBox",
-        category: "CiberSeguridad",
+        category: "Ciberseguridad",
         description:
             "Resolución de una máquina de Hack The Box mediante técnicas de enumeración y explotación orientadas a identificar y aprovechar los servicios disponibles en el objetivo.",
         technologies:
@@ -67,7 +67,7 @@ const defaultProjects = [
     {
         id: 6,
         title: "Tomcat Takeover Lab - CyberDefenders",
-        category: "CiberSeguridad",
+        category: "Ciberseguridad",
         description:
             "Análisis de tráfico de red utilizando Wireshark, aplicando filtros y estadísticas para identificar servicios web, actividad administrativa y posibles indicadores de compromiso. El laboratorio está orientado a la investigación de un posible ataque contra un servidor Tomcat y al mapeo de las técnicas observadas con MITRE ATT&CK.",
         technologies:
