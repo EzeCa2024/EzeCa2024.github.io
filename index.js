@@ -25,7 +25,7 @@ const defaultProjects = [
         technologies:
             ["Enumeración", "Hack The Box", "Pentesting", "Explotación"],
         url: "https://lnkd.in/p/dbTe9UzS",
-        image: "/3.pnp"
+        image: "tres.pnp"
     },
 
     {
