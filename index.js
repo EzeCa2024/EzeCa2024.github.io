@@ -7,7 +7,7 @@ const defaultProjects = [
     {
         id: 1,
 
-        title: "Dashboard de indicadores",
+        title: "JetBrains Lab - CyberDefenders",
 
         category: "Datos",
 
@@ -19,7 +19,7 @@ const defaultProjects = [
 
         url: "#",
 
-        image: ""
+        image: "./2.png"
     },
 
 
