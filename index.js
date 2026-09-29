@@ -27,19 +27,20 @@ const defaultProjects = [
     {
         id: 2,
 
-        title: "Automatización con Python",
+        title: "PhantomRing - HackTheBox",
 
-        category: "Python",
+        category: "CiberSeguridad ",
 
         description:
-            "Automatización de tareas repetitivas y procesamiento de información.",
+            "Resolución de una máquina de Hack The Box, aplicando técnicas de enumeración, análisis y explotación para 
+               comprometer el objetivo y completar el desafío de seguridad.",
 
         technologies:
-            ["Python", "Pandas", "CSV"],
+            ["Enumeración", "Hack The Box", "Pentesting"," Explotación"],
 
-        url: "#",
+        url: "https://github.com/EzeCa2024/EzeCa2024.github.io/blob/main/3.png",
 
-        image: ""
+        image: "https://lnkd.in/p/dbTe9UzS"
     },
 
 
